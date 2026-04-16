@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Scratch Card Dialer",
+    "slug": "scanio",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0A0E1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.scanio.scratchcarddialer",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to scan your scratch card barcode or number.",
+        "NSPhotoLibraryUsageDescription": "Access photos to scan scratch card images."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0E1A"
+      },
+      "package": "com.scanio.scratchcarddialer",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_CONTACTS",
+        "android.permission.CALL_PHONE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Scratch Card Dialer to access your camera to scan Shit"
+        }
+      ]
+    ]
+  }
+}
