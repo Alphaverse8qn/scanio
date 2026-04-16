@@ -25,7 +25,8 @@
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.READ_CONTACTS",
-        "android.permission.CALL_PHONE"
+        "android.permission.CALL_PHONE",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "plugins": [
@@ -35,6 +36,35 @@
           "cameraPermission": "Allow Scratch Card Dialer to access your camera to scan Shit"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "188191eb-5ef2-4b34-afa5-be1c5ea38d11"
+      }
+    }
+  }
+}
+
+{
+  "expo": {
+    "name": "Scanio",
+    "slug": "scanio",
+    // ... rest of your config
+    "android": {
+      // ...
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Scanio to access your camera to scan Shit"
+        }
+      ],
+      // Add the local plugin here (notice the ./ prefix)
+      "./withRemoveDeprecatedReactProp"
+    ],
+    "extra": {
+      // ...
+    }
   }
 }
