@@ -1,28 +1,47 @@
-# 📱 Scratch Card Dialer
+
+| Name                        | Icon                     |
+|-----------------------------|--------------------------|
+| Scratch Card Dialer - Scanio | ![Icon](assets/icon.png) |
+
+
+---
+
 
 Scan a scratch card barcode/number and auto-dial it — no typing required.
 
-## Features
-- 📷 Live camera with animated scan frame
-- 🔦 Torch/flashlight toggle
-- 🔍 Extracts numeric codes from barcodes, QR codes, and Code128
-- 📟 Shows each digit clearly before dialing
-- 📞 One-tap "Dial Now" opens the native phone dialer with the number pre-filled
-- 📋 Also copies to clipboard as a backup
-- 🔄 Rescan button if the wrong number was detected
+## Strengths
+-  Extracts numeric codes from barcodes, QR codes, and Code128
+- One-tap "Dial Now" opens the native phone dialer with the number pre-filled
 
-## Setup
+## > Setup local Run
 
 ```bash
-# 1. Install dependencies
+
+ #clone repo
+ git clone https://github.com/Alphaverse8qn/scanio.git
+
+#open folder
+cd scanio
+
+# Install dependencies
 npm install
 
-# 2. Start Expo
+#download EXPO GO on your Mobile
+
+# Start Expo
 npx expo start
 
-# 3. Scan the QR code with Expo Go (iOS/Android)
+# Scan the QR code with Expo Go (iOS/Android)
 ```
 
+## > easy run
+```bash
+#click on run.bat for windows 
+
+#for linux
+bash run.sh
+
+```
 ## How it works
 
 1. Point the camera at the scratch card's **barcode** (most cards have one).
